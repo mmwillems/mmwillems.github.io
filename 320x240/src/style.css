@@ -1,0 +1,152 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#creative_container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  border: 1px solid #c2c2c2;
+  perspective: 300px;
+}
+
+#creative_container #mainCubeContainer {
+  width: 290px;
+  height: 220px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#creative_container #mainCubeContainer #cubeContainer0 {
+  margin-bottom: 8px;
+}
+
+#creative_container #mainCubeContainer .cubeContainer {
+  flex: 1;
+  will-change: transform;
+  position: relative;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+  transform-style: flat;
+  perspective: none;
+}
+
+#creative_container #mainCubeContainer .cubeContainer .swipeIndicator {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
+  z-index: 20;
+  opacity: 0;
+}
+
+#creative_container #mainCubeContainer .cubeContainer .cube .cubeFace {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+
+#creative_container #mainCubeContainer .cubeContainer .cube .cubeFace .videoContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+#creative_container #mainCubeContainer .cubeContainer .cube .cubeFace .videoContainer .video {
+  width: 100%;
+  height: auto;
+  backface-visibility: hidden;
+}
+
+#creative_container #mainCubeContainer .cubeContainer .cube .cubeFace .image,
+#creative_container #mainCubeContainer .cubeContainer .cube .cubeFace .copyContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#creative_container #mainCubeContainer .cubeContainer .cube .cubeFace .copyContainer {
+  font-size: 30px;
+  font-family: "SEAT BCN Black";
+  transform-style: preserve-3d;
+  perspective: 100px;
+}
+
+#creative_container #mainCubeContainer .cubeContainer .cube .cubeFace .copyContainer div {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+}
+
+#creative_container #mainCubeContainer .cubeContainer .cube .cubeFace .copyContainer .copyShadow {
+  color: black;
+  opacity: 0;
+  filter: blur(3px);
+}
+
+#creative_container .logo {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  width: 90px;
+  height: auto;
+}
+
+#creative_container .cta {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 12px 18px;
+  right: 10px;
+  bottom: 10px;
+  background: transparent;
+  color: white;
+  background: black;
+  font-family: "SEAT BCN Black";
+  font-size: 11px;
+  transition-duration: 0.3s;
+  border-radius: 0.25em;
+}
+
+#creative_container .cta:hover {
+  background: #292929;
+  color: white;
+}
+
+#creative_container #fallback {
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: 999;
+}

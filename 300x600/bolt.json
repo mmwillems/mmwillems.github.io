@@ -1,0 +1,79 @@
+{
+	"boltCreativeId": "6020500177021122",
+	"boltVersion": "0.9.4",
+	"generatorVersion": "0.7.0",
+	"creativeType": "bolt.choreograph",
+	"choreograph": {
+		"agency": 2,
+		"advertiser": 107,
+		"adset": 24326,
+		"creative": {
+			"width": 300,
+			"height": 600
+		},
+		"template": {
+			"id": 23530,
+			"name": "SEAT-1145_300x600",
+			"revision": 26
+		},
+		"plugins": {
+			"ghg": {
+				"name": "ghg",
+				"displayName": "GHG Banner Basics",
+				"version": "4.1.0",
+				"url": "https://s3-eu-west-1.amazonaws.com/plugins.studio.lemonpi.io/ghg/4.1.0/script.js",
+				"panel": "https://s3-eu-west-1.amazonaws.com/plugins.studio.lemonpi.io/ghg/4.1.0/panel.json",
+				"dependencies": {
+					"jQuery": "3.4.1",
+					"TweenMax": "2.1.2"
+				}
+			},
+			"check": {
+				"name": "check",
+				"displayName": "Check",
+				"version": "3.1.0",
+				"url": "https://s3-eu-west-1.amazonaws.com/plugins.studio.lemonpi.io/check/3.1.0/script.js",
+				"panel": "https://s3-eu-west-1.amazonaws.com/plugins.studio.lemonpi.io/check/3.1.0/panel.json"
+			},
+			"Kosi": {
+				"name": "Kosi",
+				"displayName": "Kosi",
+				"version": "4.1.5",
+				"url": "https://s3-eu-west-1.amazonaws.com/plugins.studio.lemonpi.io/Kosi/4.1.5/script.js",
+				"panel": "https://s3-eu-west-1.amazonaws.com/plugins.studio.lemonpi.io/Kosi/4.1.5/panel.json",
+				"dependencies": {
+					"jQuery": "3.4.1"
+				}
+			}
+		},
+		"pluginSettings": {
+			"ghg": {
+				"looping": false,
+				"previewScalifier": false,
+				"loopstopDelay": "15"
+			},
+			"check": {
+				"deviceType": "mobile",
+				"operatingSystem": false,
+				"screenType": false,
+				"browser": false
+			},
+			"Kosi": {
+				"trackVideos": false,
+				"campaign": "SEAT-1145",
+				"trackMIAB": false,
+				"trackTimeSpent": false,
+				"trackClick": false,
+				"trackHover": false,
+				"client": "SEAT::56",
+				"trackFallback": true
+			}
+		},
+		"fonts": {
+			"advertiser": {},
+			"legacy": [
+				"SEAT BCN Black"
+			]
+		}
+	}
+}
