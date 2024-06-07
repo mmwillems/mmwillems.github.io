@@ -274,6 +274,7 @@ const $53f0fee299d2753b$var$createTouchEvents = (cubeSettings) => {
     $53f0fee299d2753b$var$cubeOnClick(cubeSettings);
   });
   hammer.on("panmove panstart panend", (event) => {
+    event.preventDefault();
     if (
       !$53f0fee299d2753b$var$isValidDirection(event, cubeSettings) ||
       (event.type === "panmove" && cubeSettings.isAnimating) ||
