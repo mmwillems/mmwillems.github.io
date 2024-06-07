@@ -586,6 +586,7 @@ export function initCreative(content) {
         threshold: 0.01,
         direction: "x",
         onClick: (index) => {
+          console.log("onClick, index:", index);
           Creative.click(["clickOut"]);
         },
       })
