@@ -1964,67 +1964,68 @@ awaitPlugins(function () {
     // Evalled on the next animation frame to ensure the
     // repaint caused by making the '#creative_container' visible
     // has finished.
-    // window.requestAnimationFrame(function() {
-    //   var initInterval = setInterval(function() {
-    //     if (typeof initCreative === 'function') {
-    //       initCreative(content);
-    //       clearInterval(initInterval);
-    //     }
-    //   }, 10);
-    // });
-    setTimeout(function () {
-      var contentConcept = {
-        videoBackground: {
-          type: "video",
-          value:
-            "https://assets.lemonpi.io/a/849/f7d13a34e62eb281513b670c37c539ea.mp4",
-        },
-        cssOverride: {
-          type: "text",
-          value: '{\n\t"#pancake": {\n\t\t"background-size": "cover"\n\t}\n}',
-        },
-        disclaimer: {
-          type: "text",
-          value: "",
-        },
-        variant: {
-          type: "text",
-          value: "LVB",
-        },
-        logo: {
-          type: "image",
-          value:
-            "https://assets.lemonpi.io/a/849/1a16d0ce4bc1776eff83227458338449.svg",
-        },
-        fallback: {
-          type: "image",
-          value:
-            "https://assets.lemonpi.io/a/849/2170905db3aa917d672b4e242bd18d5c.png",
-        },
-        pancake: {
-          type: "image",
-          value: "",
-        },
-        clickUrl: {
-          type: "click",
-          value: "https://www.ns.nl/",
-        },
-        ctaArrow: {
-          type: "image",
-          value:
-            "https://assets.lemonpi.io/a/849/b6ed903c5156cff9feee5c5c96e1d058.svg",
-        },
-        ctaCopy: {
-          type: "text",
-          value: "Meer voordeel",
-        },
-        videoFallback: {
-          type: "image",
-          value:
-            "https://assets.lemonpi.io/a/849/9526d4ea474c6def1c6b258b4e5e58fa.jpg",
-        },
-      };
-      initCreative(contentConcept);
-    }, 500);
+    window.requestAnimationFrame(function () {
+      var initInterval = setInterval(function () {
+        if (typeof initCreative === "function") {
+          // initCreative(content);
+          clearInterval(initInterval);
+        }
+      }, 10);
+    });
   });
 });
+
+setTimeout(function () {
+  var contentConcept = {
+    videoBackground: {
+      type: "video",
+      value:
+        "https://assets.lemonpi.io/a/849/f7d13a34e62eb281513b670c37c539ea.mp4",
+    },
+    cssOverride: {
+      type: "text",
+      value: '{\n\t"#pancake": {\n\t\t"background-size": "cover"\n\t}\n}',
+    },
+    disclaimer: {
+      type: "text",
+      value: "",
+    },
+    variant: {
+      type: "text",
+      value: "LVB",
+    },
+    logo: {
+      type: "image",
+      value:
+        "https://assets.lemonpi.io/a/849/1a16d0ce4bc1776eff83227458338449.svg",
+    },
+    fallback: {
+      type: "image",
+      value:
+        "https://assets.lemonpi.io/a/849/2170905db3aa917d672b4e242bd18d5c.png",
+    },
+    pancake: {
+      type: "image",
+      value: "",
+    },
+    clickUrl: {
+      type: "click",
+      value: "https://www.ns.nl/",
+    },
+    ctaArrow: {
+      type: "image",
+      value:
+        "https://assets.lemonpi.io/a/849/b6ed903c5156cff9feee5c5c96e1d058.svg",
+    },
+    ctaCopy: {
+      type: "text",
+      value: "Meer voordeel",
+    },
+    videoFallback: {
+      type: "image",
+      value:
+        "https://assets.lemonpi.io/a/849/9526d4ea474c6def1c6b258b4e5e58fa.jpg",
+    },
+  };
+  initCreative(contentConcept);
+}, 1500);

@@ -1,0 +1,22 @@
+// main: creative.scss
+
+// NSSans
+@import url("https://f.lemonpi.io/a/849/f/2d0338cc-7f1d-465f-925b-9fd110cd9624/font-face.css");
+// NSSans Bold
+@import url("https://f.lemonpi.io/a/849/f/a31519d2-d57b-4536-8924-e25db7baf8f2/font-face.css");
+
+$fontRegular: 'NSSans';
+$fontBold: 'NSSans-Bold';
+
+// Colors
+$colorBlue: #003082;
+$colorRed: #FF0045;
+$colorYellow: #ffc917;
+$colorWhite: #FFFFFF;
+$colorBorder: #E3E3E3;
+
+// Settings
+$creativeWidth: 300px;
+$creativeHeight: 250px;
+$defaultPaddingTopBottom: 16px;
+$defaultPaddingLeftRight: 16px;

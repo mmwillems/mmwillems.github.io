@@ -9,8 +9,8 @@ var mainTimeline = new gsap.timeline({ paused: true });
 var ctaAnimation = new gsap.timeline({ paused: true, repeat: -1 });
 
 // Set values from LemonPI Manage-r
-function initCreative(content) {
-  console.log(content);
+function initCreative(content2) {
+  window.content = content2;
   setContent();
   interaction();
 
@@ -72,7 +72,7 @@ gsap.delayedCall(15, function () {
 });
 
 const setContent = () => {
-  kosi.setVariant(content.variant.value);
+  // kosi.setVariant(content.variant.value);
 
   $("#ctaContainer").html(
     `${content.ctaCopy.value} <img id="ctaArrow" src='${content.ctaArrow.value}'>`
